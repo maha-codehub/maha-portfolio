@@ -1831,3 +1831,143 @@ button {
   transform: none !important;
   box-shadow: none !important;
 }
+.animated-name {
+  font-size: clamp(36px, 6vw, 76px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  color: #FDE7C3;
+}
+/* =====================================
+   MOBILE – CLEAN & MINIMAL CARD DESIGN
+===================================== */
+
+@media (max-width: 700px) {
+
+  /* Reduce overall section spacing */
+  .section-pad {
+    padding: 38px 0 !important;
+  }
+
+  .section-shell {
+    min-height: auto !important;
+  }
+
+  /* All cards */
+  .card-surface,
+  .project-card,
+  .skill-card,
+  .education-card,
+  .experience-card,
+  .achievement-card,
+  .leadership-card,
+  .contact-card,
+  .about-card,
+  .info-card,
+  .stat-card,
+  .content-card {
+    padding: 13px !important;
+    margin-bottom: 9px !important;
+    min-height: auto !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+  }
+
+  /* Card headings */
+  .card-surface h3,
+  .project-card h3,
+  .skill-card h3,
+  .education-card h3 {
+    font-size: 15px !important;
+    line-height: 1.35 !important;
+    margin: 3px 0 6px !important;
+  }
+
+  /* Card descriptions */
+  .card-surface p,
+  .project-card p,
+  .education-card p,
+  .experience-card p {
+    font-size: 11px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 5px !important;
+  }
+
+  /* Reduce grid gaps */
+  .projects-list,
+  .skills-grid,
+  .education-grid,
+  .experience-grid,
+  .achievements-grid,
+  .leadership-grid,
+  .about-grid,
+  .contact-grid {
+    gap: 10px !important;
+  }
+
+  /* Project highlights */
+  .project-highlights {
+    gap: 7px !important;
+    margin: 9px 0 !important;
+  }
+
+  .project-highlight-item {
+    padding: 9px 10px !important;
+    border-radius: 7px !important;
+  }
+
+  .project-highlight-item strong {
+    font-size: 10px !important;
+  }
+
+  .project-highlight-item p {
+    font-size: 10px !important;
+    line-height: 1.45 !important;
+  }
+
+  /* Technology badges */
+  .project-stack {
+    gap: 5px !important;
+    margin-top: 9px !important;
+  }
+
+  .project-stack span {
+    padding: 4px 7px !important;
+    font-size: 9px !important;
+  }
+
+  /* Buttons */
+  .project-links {
+    gap: 7px !important;
+    margin-top: 11px !important;
+  }
+
+  .project-links a {
+    padding: 8px 11px !important;
+    font-size: 10px !important;
+  }
+
+  /* Section headings */
+  .section-heading {
+    margin-bottom: 20px !important;
+  }
+
+  .section-heading h2 {
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+  }
+
+  .section-heading p {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Remove unnecessary card minimum heights */
+  .card-surface,
+  .project-card,
+  .skill-card,
+  .education-card,
+  .experience-card {
+    height: auto !important;
+  }
+}

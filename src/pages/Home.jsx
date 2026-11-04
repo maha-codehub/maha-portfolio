@@ -16,20 +16,17 @@ export default function Home() {
           </div>
 
           <p className="hero-kicker">HELLO, I'M</p>
-
-          <h1>
-            Maha <span>Lakshmi</span>
-          </h1>
+<h1 className="animated-name">Maha Lakshmi</h1>
 
           <h2>
              Aspiring Full-Stack Developer 
           </h2>
 
-          <p className="hero-description">
+          {/* <p className="hero-description">
             I build practical web applications, reliable backend
             systems, and user-focused digital experiences with
             modern web technologies.
-          </p>
+          </p> */}
 
           <div className="hero-actions">
             <a className="btn btn-primary" href="#projects">
