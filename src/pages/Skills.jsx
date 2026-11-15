@@ -1,4 +1,3 @@
-
 import SectionHeading from "../components/SectionHeading.jsx";
 
 import {
@@ -16,11 +15,12 @@ import {
   FaServer,
   FaTools,
   FaCode,
+  FaLaptopCode,
+
 } from "react-icons/fa";
 
 import {
   SiJavascript,
-  SiC,
   SiExpress,
   SiMysql,
   SiMongodb,
@@ -34,79 +34,58 @@ import { FiMonitor } from "react-icons/fi";
 
 const groups = [
   {
-    icon: <FaCode />,
-    title: "Programming Languages",
-    items: [
-      { name: "Java", icon: <FaJava /> },
-      { name: "Python", icon: <FaPython /> },
-      // { name: "C", icon: <SiC /> },
-      { name: "JavaScript", icon: <SiJavascript /> },
-    ],
-  },
-  {
-    icon: <FaReact />,
-    title: "Frontend Development",
-    items: [
-      { name: "HTML5", icon: <FaHtml5 /> },
-      { name: "CSS3", icon: <FaCss3Alt /> },
-      { name: "React.js", icon: <FaReact /> },
-    ],
-  },
-  {
-    icon: <FaNodeJs />,
-    title: "Backend Development",
-    items: [
-      { name: "Node.js", icon: <FaNodeJs /> },
-      { name: "Express.js", icon: <SiExpress /> },
-      // { name: "REST APIs", icon: <FaServer /> },
-    ],
-  },
-  {
-    icon: <FaDatabase />,
-    title: "Databases",
-    items: [
-      { name: "MySQL", icon: <SiMysql /> },
-      { name: "MongoDB", icon: <SiMongodb /> },
-    ],
-  },
-  // {
-  //   icon: <FaTools />,
-  //   title: "Libraries & State Management",
-  //   items: [
-  //     { name: "TanStack Query", icon: <FaReact /> },
-  //   ],
-  // },
-  {
-    icon: <FaAws />,
-    title: "Cloud Services",
-    items: [
-      { name: "AWS Lightsail", icon: <FaServer /> },
-      { name: "Amazon S3", icon: <MdStorage /> },
-      { name: "Amazon SES", icon: <MdEmail /> },
-      { name: "CloudFront", icon: <FaCloud /> },
-    ],
-  },
-  {
-    icon: <FaTools />,
-    title: "Development & Deployment Tools",
-    items: [
-      { name: "Git", icon: <FaGitAlt /> },
-      { name: "GitHub", icon: <FaGithub /> },
-      { name: "Postman", icon: <SiPostman /> },
-      { name: "Thunder Client", icon: <VscTerminal /> },
-      { name: "PuTTY", icon: <VscTerminal /> },
-      { name: "WinSCP", icon: <FiMonitor /> },
-      { name: "GitHub Actions", icon: <SiGithubactions /> },
-    ],
-  },
+  title: "PROGRAMMING LANGUAGES",
+  icon: <FaCode />,
+  items: [
+    { name: "Java", icon: <FaJava /> },
+    { name: "Python", icon: <FaPython /> },
+    { name: "JavaScript", icon: <SiJavascript /> },
+  ],
+},
+
+{
+  title: "FRONTEND & BACKEND DEVELOPMENT",
+  icon: <FaLaptopCode />,
+  items: [
+    { name: "HTML5", icon: <FaHtml5 /> },
+    { name: "CSS3", icon: <FaCss3Alt /> },
+    { name: "React.js", icon: <FaReact /> },
+    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "Express.js", icon: <SiExpress /> },
+  ],
+},
+
+{
+  title: "DATABASES & CLOUD SERVICES",
+  icon: <FaDatabase />,
+  items: [
+    { name: "MySQL", icon: <SiMysql /> },
+    { name: "MongoDB", icon: <SiMongodb /> },
+    { name: "AWS Lightsail", icon: <FaServer /> },
+    { name: "Amazon S3", icon: <MdStorage /> },
+    { name: "Amazon SES", icon: <MdEmail /> },
+    { name: "CloudFront", icon: <FaCloud /> },
+  ],
+},
+
+{
+  title: "DEVELOPMENT & DEPLOYMENT TOOLS",
+  icon: <FaTools />,
+  items: [
+    { name: "Git", icon: <FaGitAlt /> },
+    { name: "GitHub", icon: <FaGithub /> },
+    { name: "Postman", icon: <SiPostman /> },
+    { name: "Thunder Client", icon: <VscTerminal /> },
+    { name: "PuTTY", icon: <VscTerminal /> },
+    { name: "WinSCP", icon: <FiMonitor /> },
+    { name: "GitHub Actions", icon: <SiGithubactions /> },
+  ],
+},
 ];
 
 export default function Skills() {
   return (
-    <section
-      id="skills"
-      className="section-shell section-pad"
-    >
+    <section id="skills" className="section-shell section-pad">
       <div className="container">
 
         <SectionHeading
@@ -148,11 +127,6 @@ export default function Skills() {
           ))}
 
         </div>
-
-        {/* <p className="skills-footnote">
-          Technologies and tools reflect hands-on use across
-          academic, personal, and real-world development projects.
-        </p> */}
 
       </div>
     </section>
